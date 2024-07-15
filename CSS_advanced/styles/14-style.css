@@ -1,7 +1,6 @@
-/* Normalize CSS */
-/* Contents of normalize.css go here */
+/* normalize.css content goes here */
 
-/* Custom properties */
+/* Define custom properties */
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
