@@ -20,52 +20,53 @@
     --line-height-big: 1.8;
     --section-header-align: center;
     --section-tagline-transform: uppercase; /* New custom property */
-  }
-  
-  /* Set the base font size for the html element */
-  html {
+}
+
+/* Set the base font size for the html element */
+html {
     font-size: 62.5%;
-  }
-  
-  /* For the body */
-  body {
+}
+
+/* For the body */
+body {
     color: var(--text-color);
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
-  }
-  
-  /* For all anchor elements */
-  a {
+}
+
+/* For all anchor elements */
+a {
     color: var(--text-color);
     text-decoration: none;
-  }
-  
-  /* For all elements with the class visually-hidden */
-  .visually-hidden {
+}
+
+/* For all elements with the class visually-hidden */
+.visually-hidden {
     display: none;
-  }
-  
-  /* For all elements with the class card-category */
-  .card-category {
+}
+
+/* For all elements with the class card-category */
+.card-category {
     color: var(--color-primary);
-  }
-  
-  /* For the section-header class */
-  .section-header {
+}
+
+/* For the section-header class */
+.section-header {
     text-align: var(--section-header-align);
-  }
-  
-  /* For all elements with the class section-tagline */
-  .section-tagline {
+}
+
+/* For all elements with the class section-tagline */
+.section-tagline {
+    color: var(--color-primary);
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform); /* Apply text transform */
     font-weight: var(--font-weight-bold); /* Apply font weight */
-  }
-  
-  /* For all heading tags */
-  h1, h2, h3, h4, h5, h6 {
+}
+
+/* For all heading tags */
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
-  }  
+}
