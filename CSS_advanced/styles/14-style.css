@@ -1,6 +1,5 @@
-/* normalize.css content goes here */
+@import url('normalize.css');
 
-/* Define custom properties */
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
@@ -26,13 +25,20 @@
     --section-title-color: var(--color-black);
 }
 
-/* Set the base font size for the html element */
-html {
-    font-size: 62.5%;
+* {
+    box-sizing: border-box;
 }
 
-/* For the body */
-body {
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+  
+.section-tagline, .card-category {
+    color: var(--color-primary);
+}
+  
+body, a {
     color: var(--text-color);
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
@@ -40,61 +46,61 @@ body {
     line-height: var(--line-height-base);
 }
 
-/* For anchor elements with hyperlinks */
-a[href] {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-/* For visited anchor elements */
-a[href]:visited {
-    font-style: italic;
-}
-
-/* For hover state of anchor elements */
-a[href]:hover {
-    text-decoration: underline;
-}
-
-/* For active state of anchor elements */
-a[href]:active {
-    background-color: var(--color-light-grey);
-}
-
-/* For all elements with the class visually-hidden */
-.visually-hidden {
-    display: none;
-}
-
-/* For all elements with the class card-category */
-.card-category {
-    color: var(--color-primary);
-}
-
-/* For the section-header class */
-.section-header {
-    text-align: var(--section-header-align);
-}
-
-/* For the section-title class */
-.section-title {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
-}
-
-/* For all elements with the class section-tagline */
-.section-tagline {
-    color: var(--color-primary);
-    font-family: var(--font-family-title);
-    text-transform: var(--section-tagline-transform);
-    font-weight: var(--font-weight-bold);
-}
-
-/* For all heading tags */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
+}
+
+a {
+    color: #161616;
+    text-decoration: none;
+}
+
+a:link {
+    font-style: italic;
+}
+
+a:visited {
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: var(--color-light-grey);
+}
+  
+.visually-hidden {
+    display: none;
+}
+  
+.card-category {
+    color: #D73953;
+}
+  
+.section-tagline {
+    color: #D73953;
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+    text-transform: var(--section-tagline-transform);
+}
+
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title  {
+   font-family: var(--font-family-title);
+   font-size: var(--font-size-xx-large);
+   font-weight: var(--font-weight-bold);
+   color: var(--section-title-color);
+    margin: var(--section-title-margin);
+}
+
+.section-header {
+    text-align: var(--section-header-align);
 }
